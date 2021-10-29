@@ -109,9 +109,6 @@
     </build>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id></id>
-        </snapshotRepository>
         <repository>
             <id>jz-repo-release-v1.0.0</id>
             <name>springboot proj release v1.0.0</name>
