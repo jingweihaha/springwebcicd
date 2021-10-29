@@ -109,10 +109,13 @@
     </build>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id></id>
+        </snapshotRepository>
         <repository>
             <id>jz-repo-release-v1.0.0</id>
             <name>springboot proj release v1.0.0</name>
-            <url>https://github.com/jingweihaha/springwebcicd/releases/tag/v1.0.0</url>
+            <url>https://github.com/jingweihaha/springwebcicd</url>
         </repository>
     </distributionManagement>
 
