@@ -108,11 +108,19 @@
         </plugins>
     </build>
 
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>jz-repo-release-v1.0.0</id>-->
+<!--            <name>springboot proj release v1.0.0</name>-->
+<!--            <url>https://github.com/jingweihaha/springwebcicd</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
+
     <distributionManagement>
         <repository>
-            <id>jz-repo-release-v1.0.0</id>
-            <name>springboot proj release v1.0.0</name>
-            <url>https://github.com/jingweihaha/springwebcicd</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/jingweihaha/springwebcicd</url>
         </repository>
     </distributionManagement>
 
