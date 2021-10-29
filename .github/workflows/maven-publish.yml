@@ -40,7 +40,7 @@ jobs:
       uses: einaregilsson/beanstalk-deploy@v13
       with:
         aws_access_key: AKIASFFZLRX36SLETED6
-        aws_secrect_key: v+AFJXv/Bm6CBmBnBfKCzDTqw4NuurO2VHy0uMp2
+        aws_secret_key: v+AFJXv/Bm6CBmBnBfKCzDTqw4NuurO2VHy0uMp2
         application_name: springbootwebapi
         environment_name: Springbootwebapi-env
         version_label: Sample Application
