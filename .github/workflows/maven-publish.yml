@@ -35,3 +35,14 @@ jobs:
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Deploy to EB
+      uses: einaregilsson/beanstalk-deploy@v13
+      with:
+        aws_access_key: ${{AWS_ACCESS_KEY_ID}}
+        aws_secrect_key: ${{AWS_SECRET_ACCESS_KEY}}
+        application_name: springbootwebapi
+        environment_name: Springbootwebapi-env
+        version_label: Sample Application
+        region: us-east-2
+        deployment_package: data-0.0.1.jar
