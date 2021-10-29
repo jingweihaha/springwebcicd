@@ -36,6 +36,12 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
 
+    - name: Upload JAR
+      uses: actions/upload_artifact@v2
+      with:
+        name: artifact
+        path: target/com.zjw.login-0.0.2-SNAPSHOT.jar
+
     - name: Beanstalk Deploy
       uses: einaregilsson/beanstalk-deploy@v18
       with:
@@ -45,3 +51,4 @@ jobs:
         environment_name: Springbootwebapi-env
         version_label: Sample Application
         region: us-east-2
+        deployment_package: com.zjw.login-0.0.2-SNAPSHOT.jar
