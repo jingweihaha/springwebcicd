@@ -110,7 +110,7 @@
 
     <distributionManagement>
         <repository>
-            <id>jzrepo-release-v1.0.0</id>
+            <id>jz-repo-release-v1.0.0</id>
             <name>springboot proj release v1.0.0</name>
             <url>https://github.com/jingweihaha/springwebcicd/releases/tag/v1.0.0</url>
         </repository>
