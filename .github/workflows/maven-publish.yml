@@ -36,8 +36,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
 
-    - name: Deploy to EB
-      uses: einaregilsson/beanstalk-deploy@v13
+    - name: Beanstalk Deploy
+      uses: einaregilsson/beanstalk-deploy@v18
       with:
         aws_access_key: AKIASFFZLRX36SLETED6
         aws_secret_key: v+AFJXv/Bm6CBmBnBfKCzDTqw4NuurO2VHy0uMp2
@@ -45,4 +45,3 @@ jobs:
         environment_name: Springbootwebapi-env
         version_label: Sample Application
         region: us-east-2
-        deployment_package: com.zjw.login-0.0.2-SNAPSHOT.jar
