@@ -36,19 +36,19 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
 
-    - name: Upload JAR
-      uses: actions/upload-artifact@v2
-      with:
-        name: artifact
-        path: target/com.zjw.login-0.0.2-SNAPSHOT.jar
-
-    - name: Beanstalk Deploy
-      uses: einaregilsson/beanstalk-deploy@v18
-      with:
-        aws_access_key: AKIASFFZLRX36SLETED6
-        aws_secret_key: v+AFJXv/Bm6CBmBnBfKCzDTqw4NuurO2VHy0uMp2
-        application_name: springbootwebapi
-        environment_name: Springbootwebapi-env
-        version_label: Sample Application
-        region: us-east-2
-        deployment_package: com.zjw.login-0.0.2-SNAPSHOT.jar
+#    - name: Upload JAR
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: artifact
+#        path: target/com.zjw.login-0.0.2-SNAPSHOT.jar
+#
+#    - name: Beanstalk Deploy
+#      uses: einaregilsson/beanstalk-deploy@v18
+#      with:
+#        aws_access_key: AKIASFFZLRX36SLETED6
+#        aws_secret_key: v+AFJXv/Bm6CBmBnBfKCzDTqw4NuurO2VHy0uMp2
+#        application_name: springbootwebapi
+#        environment_name: Springbootwebapi-env
+#        version_label: Sample Application
+#        region: us-east-2
+#        deployment_package: com.zjw.login-0.0.2-SNAPSHOT.jar
