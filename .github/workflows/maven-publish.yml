@@ -53,9 +53,9 @@ jobs:
       with:
        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-       application_name: MyApplicationName
-       environment_name: MyApplication-Environment
-       version_label: 12345
+       application_name: springwebloginapp
+       environment_name: loginapp-1.0.3
+       version_label: v1.0.3
        region: us-east-2
        deployment_package: target/login-0.0.2-SNAPSHOT.war
 
