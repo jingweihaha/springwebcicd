@@ -40,6 +40,9 @@ jobs:
         name: Package
         path: staging
 
+    - name: check all files
+      run: ls && cd target && ls
+
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
